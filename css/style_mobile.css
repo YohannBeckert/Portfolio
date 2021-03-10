@@ -1,0 +1,177 @@
+@media screen and (max-width: 350px){
+  .footer-sidebar{
+    top: 56rem;
+    left: 0rem;
+    width: 100%;
+}
+  .project-container{
+    max-width: 100%;
+    height: 14rem;
+    margin: 2% 0;
+  }
+  .content-item-contact{
+    width: 90%;
+  }
+  .item-contact{
+    width: 15rem;
+    height: 4rem;
+  }
+  .title-item h3{
+    font-size: 1.1rem;
+  }
+  .link-item a{
+    font-size: 0.85rem;
+  }
+  .img-item img{
+    width: 65%;
+    height: 55%;
+  }
+  .item-project{
+    max-width: 100%;
+    height: 14rem;
+    margin: 4% 0;
+  }
+}
+@media screen and (min-width: 350px)  and (max-width: 480px){
+  .footer-sidebar{
+    top: 55rem;
+    left: 0rem;
+    width: 100%;
+}
+.content-item-contact{
+  width: 80%;
+  padding: 8% 0;
+  margin: 3% 0;
+}
+.project-container{
+  max-width: 100%;
+  height: 16rem;
+  margin: 4% 0;
+}
+}
+@media screen and (max-width: 480px){
+
+                    /*                          */
+                  /*  Configuration  */
+                /*                          */
+
+.sidebar{
+  display: none;
+}
+                  /*                 */
+                /*  Sidebar  */
+              /*                 */
+
+/* Title sidebar */
+
+.sidebar-title{
+margin-top: 0;
+}
+
+
+         /* Social Navigation  */
+
+
+.nav-social-items{
+    padding: 0;
+}
+
+
+
+                                     /*                        */
+                                    /*  Présentation  */
+                                   /*                        */
+
+
+  #presentation{
+    height: auto;
+    padding: 0;
+  }
+
+  .content-presentation{
+    flex-direction: column;
+    padding: 20% 0;
+  }
+
+          /* Photo */
+
+  .me-img{
+    width: 100%;
+    height: auto;
+  }
+  .dim-me{
+    height: auto;
+  }
+
+          /* Texte de présentation */
+
+
+  .presentation p{
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      color:#231f20;
+  }
+  .presentation{
+    margin: 20px 0 0 0;
+      padding-left: 4%;
+      line-height: 230%;
+  }
+  .text-presentation{
+      padding: 0 5% 0 4%;
+      margin: 6% 0;
+      color: #616c6d;
+  }
+  .content-text-presentation{
+      width: 100%;
+      padding:  10% 0 0 2%;
+  }
+
+          /* Bouton présentation */
+
+
+  .content-btn-presentation{
+      width: 100%;
+      margin: 5% 0;
+  }
+
+
+                                     /*                  */
+                                    /*  Services  */
+                                   /*                  */
+
+
+ .content-service-items{
+   flex-direction: column;
+   margin-top: 6%;
+ }
+ .service-item{
+   padding: 10% 2%;
+   margin: 5%;
+ }
+
+ .text-item{
+   padding: 0 16%;
+ }
+
+
+                                     /*                 */
+                                    /*  Portfolio  */
+                                   /*                 */
+
+ #portfolio{
+   height: auto;
+ }
+  .content-all-projects{
+    flex-direction: column;
+  }
+
+                                       /*                 */
+                                     /*  Contact   */
+                                   /*                  */
+
+
+.content-text-contact p{
+  text-align: center;
+}
+
+}

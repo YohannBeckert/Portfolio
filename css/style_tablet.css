@@ -1,0 +1,236 @@
+                                     /*                  */
+                                    /*   Sidebar  */
+                                   /*                  */
+
+@media screen and (min-width: 481px)  and (max-width: 600px){
+  .footer-sidebar{
+    top: 54rem;
+    left: 0rem;
+    width: 100%;
+  }
+  .content-nav{
+    margin-top: 20%;
+  }
+  .content-text-contact p{
+    text-align: center;
+  }
+  .content-item-contact{
+    width: 70%;
+    margin: 3% 0;
+  }
+}
+@media screen and (min-width: 601px)  and (max-width: 800px){
+  .footer-sidebar{
+    top: 53rem;
+    left: 0rem;
+    width: 100%;
+  }
+  .content-nav{
+    margin-top: 10%;
+  }
+  .content-item-contact{
+    width: 60%;
+    margin: 3% 0;
+  }
+}
+@media screen and (min-width: 801px)  and (max-width: 950px){
+  .footer-sidebar{
+    top: 51.8rem;
+    left: 0rem;
+    width: 100%;
+  }
+  .content-nav{
+    margin-top: 6%;
+  }
+  .content-nav-item{
+    padding: 0 25% 0 25%;
+  }
+}
+@media screen and (min-width:951px)  and (max-width: 1024px){
+  .footer-sidebar{
+    top: 51rem;
+    left: 0rem;
+    width: 100%;
+  }
+  .content-nav{
+    margin-top: 5%;
+  }
+  .content-nav-item{
+    padding: 0 25% 0 25%;
+  }
+}
+
+                                     /*                          */
+                                    /*   Présentation  */
+                                   /*                         */
+
+
+@media screen and (min-width: 481px)  and (max-width: 699px){
+  .content-presentation{
+    flex-direction: column;
+    padding: 10% 0;
+  }
+  .me-img{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px)  and (max-width: 1024px){
+  .content-presentation{
+    flex-direction: row;
+  }
+  .me-img{
+    width: 70%;
+  }
+  .content-text-presentation{
+    padding: 0;
+  }
+  #presentation{
+    margin: 7% 0;
+  }
+}
+
+                                     /*                 */
+                                    /*  Service  */
+                                  /*                */
+
+                                  
+
+@media screen and (min-width: 481px)  and (max-width: 600px){
+  .service{
+    margin: 0;
+  }
+  .service-item{
+    width: 70%;
+    padding: 10% 2%;
+    margin: 5%;
+  }
+  .text-item{
+    padding: 0 16%;
+  }
+}
+@media screen and (min-width: 481px)  and (max-width: 999px){
+  .content-service-items{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-item{
+    width: 60%;
+    padding: 10% 2%;
+    margin: 5%;
+  }
+  .text-item{
+    padding: 0 16%;
+  }
+}
+@media screen and (min-width: 1000px)  and (max-width: 1024px){
+  .content-service-items{
+    flex-direction:row;
+  }
+  .service-item{
+    margin: 3%;
+    padding: 2%;
+  }
+  .text-item{
+    padding: 2%;
+  }
+}
+
+
+                                     /*                  */
+                                    /*  Portfolio  */
+                                  /*                 */
+
+                                  
+
+@media screen and (min-width: 481px)  and (max-width: 600px){
+  .content-all-projects{
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-container{
+    max-width: 80%;
+    margin: 4% 0;
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 601px)  and (max-width: 800px){
+  .content-all-projects{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-container{
+    max-width: 45%;
+    height: 14rem;
+    margin: 2%;
+  }
+}
+@media screen and (min-width: 801px)  and (max-width: 1024px){
+  .content-all-projects{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-container{
+    max-width: 40%;
+    margin: 2%;
+    height: 14rem;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+
+  .sidebar{
+    display: none;
+  }
+  .sidebar-title{
+  margin-top: 0;
+  }
+  .nav-social-items{
+      padding: 0;
+  }
+
+  #presentation{
+    height: auto;
+    padding: 0;
+  }
+  .me-img{
+    height: auto;
+  }
+  .dim-me{
+    height: auto;
+  }
+
+.content-text-presentation{
+  width: 100%;
+}
+  .presentation p{
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      color:#231f20;
+  }
+  .presentation{
+    margin: 20px 0 0 0;
+      padding-left: 4%;
+      line-height: 230%;
+  }
+  .text-presentation{
+      padding: 0 5% 0 4%;
+      margin: 6% 0;
+      color: #616c6d;
+  }
+
+  .content-btn-presentation{
+      width: 100%;
+      margin: 5% 0;
+  }
+
+ #portfolio{
+   height: auto;
+ }
+}
