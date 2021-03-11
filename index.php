@@ -1,4 +1,5 @@
 <?php require_once 'php/layout/header.php'; ?>
+<?php require_once 'php/boards.php'; ?>
 
     <section class="sidebar invisible" id="menu">
 
@@ -20,31 +21,13 @@
             <div class="content-nav-menu">
                 <nav>
                     <ul class="content-nav-item">
-                        <a href="#home-area">
+                    <?php foreach ($navItem as $item) { ?>
+                        <a href="#<?= $item ?>">
                             <div class="content-item">
-                                <li class="nav-item"><p>Accueil</p></li>
+                                <li class="nav-item"><p><?= $item ?></p></li>
                             </div>
                         </a>
-                        <a href="#presentation">
-                            <div class="content-item">
-                                <li class="nav-item"><p>Présentation</p></li>
-                            </div>
-                        </a>
-                        <a href="#services">
-                            <div class="content-item">
-                                <li class="nav-item"><p>Services</p></li>
-                            </div>
-                        </a>
-                        <a href="#portfolio">
-                            <div class="content-item">
-                                <li class="nav-item"><p>Portfolio</p></li>
-                            </div>
-                        </a>
-                        <a href="#contact">
-                            <div class="content-item">
-                                <li class="nav-item"><p>Contact</p></li>
-                            </div>
-                        </a>
+                    <?php } ?>                       
                     </ul>
                 </nav>
             </div>         
@@ -54,34 +37,15 @@
         <div class="content-nav-social">
             <nav>
                 <ul class="nav-social-items">
+                <?php foreach ($networks as $key => $value) { ?>
                     <div class="content-social-item">
-                        <a href="https://www.facebook.com/yohann.beckert" target="_blank">
+                        <a href="<?= $value ?>" target="_blank">
                             <li class="social-item">
-                                <img class="facebook" src="assets/images/icons/facebook.png" alt="">
+                            <img class="<?= $key ?>" src="assets/images/icons/<?= $key ?>.png" alt="">
                             </li>
                         </a>
                     </div>
-                    <div class="content-social-item">
-                        <a href="https://github.com/YohannBeckert" target="_blank">
-                            <li class="social-item">
-                                <img class="github" src="assets/images/icons/github.png" alt="">
-                            </li>
-                        </a>
-                    </div>
-                    <div class="content-social-item">
-                        <a href="https://www.linkedin.com/in/yohann-beckert-4903a1203/" target="_blank">
-                            <li class="social-item">
-                                <img class="linkedin" src="assets/images/icons/linkedin.png" alt="">
-                            </li>
-                        </a>
-                    </div>                    
-                    <div class="content-social-item">
-                        <a href="https://twitter.com/YohannBeckert" target="_blank">
-                            <li class="social-item">
-                                <img class="twitter" src="assets/images/icons/twitter.png" alt="">
-                            </li>
-                        </a>
-                    </div>
+                <?php }?>
                 </ul>
             </nav>
         </div>
@@ -95,7 +59,7 @@
     <section id="main">
         <main>
 
-            <section id="home-area">
+            <section id="accueil">
                 <div class="content-aera">
                     <div id="menu-burger">
                         <div class="bar1"></div>
@@ -139,10 +103,10 @@
                         </div>
                         <div class="text-presentation">
                             <p>
-                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile. Mes outils actuels sont HTML, CSS, Javascript, SQL, PHP et le framework Symfony. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework comme Python ou encore REACT JS. <br><br>
+                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile en téléprésentiel. Mes outils actuels sont HTML, CSS, Javascript, SQL, PHP et le framework Symfony. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework comme Python ou encore REACT JS. <br><br>
                                 Très appliquée, je tends à produire un code de qualité et maintenable dans le temps en utilisant la méthode agile.
                                 Je mets à votre service et au service des clients mon dynamisme, ma curiosité et ma rapide capacité d'adaptation.
-                                Même si je suis plus attirer par le back end, je suis capable de travailler sur le front. <br><br>
+                                Même si je suis plus à l'aise avec back-end, je suis aussi capable de travailler sur le front. <br><br>
                                 Sociable, autonome, autodidacte, bonne capacité de recherche,et dynamique, je travaille en anglais et/ou français.
                             </p>
                         </div>  
@@ -225,18 +189,11 @@
                         <h2>Portfolio</h2>
                     </div>
                     <div class="content-nav-filter-pf">
+                    <?php foreach ($filter as $nameFilter) { ?>
                         <div class="item-filter-btn">
-                            <button class="filter-btn">tous</button>  
+                            <button class="filter-btn"><?= $nameFilter ?></button>  
                         </div>
-                        <div class="item-filter-btn">
-                            <button class="filter-btn">portfolio</button>  
-                        </div>
-                        <div class="item-filter-btn">
-                            <button class="filter-btn">projet</button>  
-                        </div>
-                        <div class="item-filter-btn">
-                            <button class="filter-btn">blog</button>
-                        </div>
+                    <?php } ?>
                     </div>
                     <div class="content-all-projects">
 
@@ -317,97 +274,23 @@
 
                     <div class="content-item-contact">
 
+                    <?php foreach ($contact as $nameItem => $contactItem) {?>
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="assets/images/icons/Mail.png" alt="E-mail">
+                                    <img src="assets/images/icons/<?= $nameItem ?>.png" alt="<?= $nameItem ?>">
                                 </div>
                             </section>
                             <section class="right-side">
                                     <div class="title-item">
-                                        <h3>E-mail</h3>
+                                        <h3><?= $nameItem ?></h3>
                                     </div>
                                     <div class="link-item">
-                                        <a href="mailto:yohann.beckert@gmail.com" target="_blank" rel="">yohann.beckert@gmail.com</a>
+                                        <a href="<?= $contactItem[1]?>" target="_blank" rel=""><?= $contactItem[0]?></a>
                                     </div>
                             </section>
                         </div>
-                        <div class="item-contact">
-                            <section class="left-side">
-                                <div class="img-item">
-                                    <img src="assets/images/icons/facebook.png" alt="Facebook">
-                                </div>
-                            </section>
-                            <section class="right-side">
-                                    <div class="title-item">
-                                        <h3>Facebook</h3>
-                                    </div>
-                                    <div class="link-item">
-                                        <a href="https://www.facebook.com/yohann.beckert/" target="_blank" rel="">Ma page Facebook</a>
-                                    </div>
-                            </section>
-                        </div>
-                        <div class="item-contact">
-                            <section class="left-side">
-                                <div class="img-item">
-                                    <img src="assets/images/icons/twitter.png" alt="Twitter">
-                                </div>
-                            </section>
-                            <section class="right-side">
-                                    <div class="title-item">
-                                        <h3>Twitter</h3>
-                                    </div>
-                                    <div class="link-item">
-                                        <a href="https://twitter.com/YohannBeckert" target="_blank" rel="">Ma page Twitter</a>
-                                    </div>
-                            </section>
-                        </div>
-                        <div class="item-contact">
-                            <section class="left-side">
-                                <div class="img-item">
-                                    <img src="assets/images/icons/linkedin.png" alt="LinkedIn">
-                                </div>
-                            </section>
-                            <section class="right-side">
-                                    <div class="title-item">
-                                        <h3>LinkedIn</h3>
-                                    </div>
-                                    <div class="link-item">
-                                        <a href="https://www.linkedin.com/in/yohann-beckert-4903a1203/" target="_blank" rel="">Ma page LinkedIn</a>
-                                    </div>
-                            </section>
-                        </div>
-                        <div class="item-contact">
-                            <section class="left-side">
-                                <div class="img-item">
-                                    <img src="assets/images/icons/github.png" alt="Github">
-                                </div>
-                            </section>
-                            <section class="right-side">
-                                    <div class="title-item">
-                                        <h3>Github</h3>
-                                    </div>
-                                    <div class="link-item">
-                                        <a href="https://github.com/YohannBeckert" target="_blank" rel="">Ma page Github</a>
-                                    </div>
-                            </section>
-                        </div>
-                        <div class="item-contact">
-                            <section class="left-side">
-                                <div class="img-item">
-                                    <img src="assets/images/icons/telephone.png" alt="Téléphone">
-                                </div>
-                            </section>
-                            <section class="right-side">
-                                    <div class="title-item">
-                                        <h3>Téléphone</h3>
-                                    </div>
-                                    <div class="link-item">
-                                        <a href="#link-item"  rel="">06 32 78 75 34</a>
-                                    </div>
-                            </section>
-                        </div>
-
+                    <?php }?>                     
                     </div>
 
                 </div>
