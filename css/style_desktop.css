@@ -20,7 +20,11 @@
  .content-nav-item {
    padding: 0 5% 0 5%; 
 }
-
+.footer-sidebar {
+  top: 58rem;
+  left: 0rem;
+  width: 100%;
+}
  .title-item-service h3{
 text-align: center;
  }
@@ -93,6 +97,11 @@ flex-direction: column;
 .content-nav {
  margin-top: 50%;
 }
+.footer-sidebar {
+  top: 58rem;
+  left: 0rem;
+  width: 100%;
+}
 .content-nav-item {
   padding: 0 5% 0 5%; 
 }
@@ -125,8 +134,10 @@ flex-direction: column;
 .content-nav-item {
   padding: 0 5% 0 5%; 
 }
-.footer-sidebar{
-  left: 3.2rem;
+.footer-sidebar {
+  top: 58rem;
+  left: 0rem;
+  width: 100%;
 }
 
  #presentation{

@@ -196,20 +196,20 @@
                     <?php } ?>
                     </div>
                     <div class="content-all-projects">
-
+                        <?php foreach ($portfolio as $nameWebsite => $infoWebsite) {?>
                         <div class="project-container">
-                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
+                            <img class="project-picture" src="assets/images/others/<?=$nameWebsite?>.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
-                                    <h3>FoodLocal</h3>                                 
+                                    <h3><?=$nameWebsite?></h3>                                 
                                 </div>
                                 <div class="language-project">
                                     <h4>Langage(s) et framwork(s) utilisé(s) :</h4>
-                                    <p>Symfony, React</p>
+                                    <p><?=$infoWebsite[0]?></p>
                                 </div>
                                 <div class="all-link-project">
                                     <h4>Lien(s) :</h4>
-                                    <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
+                                    <a href="<?=$infoWebsite[1]?>" target="_blank">
                                         <div class="link-project">
                                             <img class="link-github" src="assets/images/icons/github.png" alt="">
                                         </div>
@@ -217,47 +217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-container">
-                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
-                            <div class="overlay">
-                                <div class="title-project">
-                                    <h3>FoodLocal</h3>                                 
-                                </div>
-                                <div class="language-project">
-                                    <h4>Langage(s) et framwork(s) utilisé(s) :</h4>
-                                    <p>Symfony, React</p>
-                                </div>
-                                <div class="all-link-project">
-                                    <h4>Lien(s) :</h4>
-                                    <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
-                                        <div class="link-project">
-                                            <img class="link-github" src="assets/images/icons/github.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-container">
-                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
-                            <div class="overlay">
-                                <div class="title-project">
-                                    <h3>FoodLocal</h3>                                 
-                                </div>
-                                <div class="language-project">
-                                    <h4>Langage(s) et framwork(s) utilisé(s) :</h4>
-                                    <p>Symfony, React</p>
-                                </div>
-                                <div class="all-link-project">
-                                    <h4>Lien(s) :</h4>
-                                    <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
-                                        <div class="link-project">
-                                            <img class="link-github" src="assets/images/icons/github.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php }?>                         
                     </div>
             </section>
 

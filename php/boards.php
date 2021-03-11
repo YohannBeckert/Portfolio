@@ -54,3 +54,19 @@ $contact =[
     ]
 ];
 
+/* board of info portfolio (for portfolio) */
+
+$portfolio =[
+    'portfolio' => [
+        'PHP, HTML, CSS, Javascript',
+        'https://github.com/YohannBeckert/Portfolio'
+    ],
+    'foodlocal' => [
+        'React, Symfony, SCSS',
+        'https://github.com/O-clock-McFly/projet-cuisiner-a-domicile'
+    ],
+    'algo-mate' => [
+        'Symfony, Twig, CSS',
+        'https://github.com/YohannBeckert/Algo-Mate'
+    ]
+];
