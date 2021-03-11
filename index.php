@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="../css/scrollbar.css">
-    <link rel="stylesheet" href="../css/menu_burger.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/project_card.css">
-    <link rel="stylesheet" href="../css/style_mobile.css">
-    <link rel="stylesheet" href="../css/style_tablet.css">
-    <link rel="stylesheet" href="../css/style_desktop.css">
-
-    <title>Portfolio - Yohann Beckert</title>
-</head>
-
-<body>
+<?php require_once 'php/layout/header.php'; ?>
 
     <section class="sidebar invisible" id="menu">
 
@@ -75,28 +57,28 @@
                     <div class="content-social-item">
                         <a href="https://www.facebook.com/yohann.beckert" target="_blank">
                             <li class="social-item">
-                                <img class="facebook" src="../assets/images/icons/facebook.png" alt="">
+                                <img class="facebook" src="assets/images/icons/facebook.png" alt="">
                             </li>
                         </a>
                     </div>
                     <div class="content-social-item">
                         <a href="https://github.com/YohannBeckert" target="_blank">
                             <li class="social-item">
-                                <img class="github" src="../assets/images/icons/github.png" alt="">
+                                <img class="github" src="assets/images/icons/github.png" alt="">
                             </li>
                         </a>
                     </div>
                     <div class="content-social-item">
                         <a href="https://www.linkedin.com/in/yohann-beckert-4903a1203/" target="_blank">
                             <li class="social-item">
-                                <img class="linkedin" src="../assets/images/icons/linkedin.png" alt="">
+                                <img class="linkedin" src="assets/images/icons/linkedin.png" alt="">
                             </li>
                         </a>
                     </div>                    
                     <div class="content-social-item">
                         <a href="https://twitter.com/YohannBeckert" target="_blank">
                             <li class="social-item">
-                                <img class="twitter" src="../assets/images/icons/twitter.png" alt="">
+                                <img class="twitter" src="assets/images/icons/twitter.png" alt="">
                             </li>
                         </a>
                     </div>
@@ -146,7 +128,7 @@
 
                     <div class="me-img">
                         <div class="dim-me">
-                            <img class="me" src="../assets/images/others/moi.png" alt="">
+                            <img class="me" src="assets/images/others/moi.png" alt="">
                         </div>
                     </div>
 
@@ -209,7 +191,6 @@
 
                         <div class="service-item">
                             <div class="icon-item">
-                                <img src="" alt="">
                             </div>
                             <div class="title-item-service">
                                 <h3>SEO</h3>
@@ -223,7 +204,6 @@
 
                         <div class="service-item">
                             <div class="icon-item responsive">
-                                <img src="" alt="">
                             </div>
                             <div class="title-item-service">
                                 <h3>Responsive Design</h3>
@@ -261,7 +241,7 @@
                     <div class="content-all-projects">
 
                         <div class="project-container">
-                            <img class="project-picture" src="../assets/images/others/foodlocal.png" alt="">
+                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
                                     <h3>FoodLocal</h3>                                 
@@ -274,14 +254,14 @@
                                     <h4>Lien(s) :</h4>
                                     <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
                                         <div class="link-project">
-                                            <img class="link-github" src="../assets/images/icons/github.png" alt="">
+                                            <img class="link-github" src="assets/images/icons/github.png" alt="">
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-container">
-                            <img class="project-picture" src="../assets/images/others/foodlocal.png" alt="">
+                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
                                     <h3>FoodLocal</h3>                                 
@@ -294,14 +274,14 @@
                                     <h4>Lien(s) :</h4>
                                     <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
                                         <div class="link-project">
-                                            <img class="link-github" src="../assets/images/icons/github.png" alt="">
+                                            <img class="link-github" src="assets/images/icons/github.png" alt="">
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-container">
-                            <img class="project-picture" src="../assets/images/others/foodlocal.png" alt="">
+                            <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
                                     <h3>FoodLocal</h3>                                 
@@ -314,7 +294,7 @@
                                     <h4>Lien(s) :</h4>
                                     <a href="https://github.com/O-clock-McFly/projet-cuisiner-a-domicile" target="_blank">
                                         <div class="link-project">
-                                            <img class="link-github" src="../assets/images/icons/github.png" alt="">
+                                            <img class="link-github" src="assets/images/icons/github.png" alt="">
                                         </div>
                                     </a>
                                 </div>
@@ -340,7 +320,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/Mail.png" alt="E-mail">
+                                    <img src="assets/images/icons/Mail.png" alt="E-mail">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -355,7 +335,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/facebook.png" alt="Facebook">
+                                    <img src="assets/images/icons/facebook.png" alt="Facebook">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -370,7 +350,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/twitter.png" alt="Twitter">
+                                    <img src="assets/images/icons/twitter.png" alt="Twitter">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -385,7 +365,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/linkedin.png" alt="LinkedIn">
+                                    <img src="assets/images/icons/linkedin.png" alt="LinkedIn">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -400,7 +380,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/github.png" alt="Github">
+                                    <img src="assets/images/icons/github.png" alt="Github">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -415,7 +395,7 @@
                         <div class="item-contact">
                             <section class="left-side">
                                 <div class="img-item">
-                                    <img src="../assets/images/icons/telephone.png" alt="Téléphone">
+                                    <img src="assets/images/icons/telephone.png" alt="Téléphone">
                                 </div>
                             </section>
                             <section class="right-side">
@@ -434,16 +414,4 @@
             </section>
         </main>
 
-        <footer>
-             <div class="all-content-footer">
-                <div class="text-footer">
-                    <p>&copy; 2021 Yohann Beckert - Tous droits réservés.</p>
-                </div>
-             </div>
-        </footer>
-    </section>
-
-
-    <script src="../JS/index.js"></script>
-</body>
-</html>
+<?php require_once 'php/layout/footer.php'; ?>
