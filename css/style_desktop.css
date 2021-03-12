@@ -21,7 +21,7 @@
    padding: 0 5% 0 5%; 
 }
 .footer-sidebar {
-  top: 58rem;
+  top: 51rem;
   left: 0rem;
   width: 100%;
 }
@@ -98,7 +98,7 @@ flex-direction: column;
  margin-top: 50%;
 }
 .footer-sidebar {
-  top: 58rem;
+  top: 51.5rem;
   left: 0rem;
   width: 100%;
 }
@@ -109,9 +109,9 @@ flex-direction: column;
 
 @media screen and ( min-width: 1600px){
 
-                    /*                          */
+                    /*                 */
                    /*  Configuration  */
-                  /*                          */
+                  /*                 */
 
 
 #menu-burger{
@@ -135,7 +135,7 @@ flex-direction: column;
   padding: 0 5% 0 5%; 
 }
 .footer-sidebar {
-  top: 58rem;
+  top: 51.5rem;
   left: 0rem;
   width: 100%;
 }

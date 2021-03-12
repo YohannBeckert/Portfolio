@@ -4,13 +4,11 @@
 
 @media screen and (min-width: 481px)  and (max-width: 600px){
   .footer-sidebar{
-    top: 57rem;
+    top: 50rem;
     left: 0rem;
     width: 100%;
   }
-  .content-nav{
-    margin-top: 20%;
-  }
+
   .content-text-contact p{
     text-align: center;
   }
@@ -21,7 +19,7 @@
 }
 @media screen and (min-width: 601px)  and (max-width: 800px){
   .footer-sidebar{
-    top: 55rem;
+    top: 48rem;
     left: 0rem;
     width: 100%;
   }
@@ -35,7 +33,7 @@
 }
 @media screen and (min-width: 801px)  and (max-width: 950px){
   .footer-sidebar{
-    top: 54rem;
+    top: 47rem;
     left: 0rem;
     width: 100%;
   }
@@ -48,7 +46,7 @@
 }
 @media screen and (min-width:951px)  and (max-width: 1024px){
   .footer-sidebar{
-    top: 53rem;
+    top: 46rem;
     left: 0rem;
     width: 100%;
   }
