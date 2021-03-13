@@ -3,11 +3,6 @@
                                    /*            */
 
 @media screen and (min-width: 481px)  and (max-width: 600px){
-  .footer-sidebar{
-    top: 54rem;
-    left: 0rem;
-    width: 100%;
-  }
 
   .content-text-contact p{
     text-align: center;
@@ -16,13 +11,17 @@
     width: 70%;
     margin: 3% 0;
   }
+  #menu.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-item{
+    margin-bottom: 5%;
+  }
 }
 @media screen and (min-width: 601px)  and (max-width: 800px){
-  .footer-sidebar{
-    top: 53rem;
-    left: 0rem;
-    width: 100%;
-  }
+
   .content-nav{
     margin-top: 10%;
   }
@@ -30,25 +29,40 @@
     width: 60%;
     margin: 3% 0;
   }
+  #menu.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-item{
+    margin-bottom: 5%;
+  }
 }
 @media screen and (min-width: 801px)  and (max-width: 950px){
-  .footer-sidebar{
-    top: 52rem;
-    left: 0rem;
-    width: 100%;
-  }
+
   .content-nav{
     margin-top: 6%;
   }
   .content-nav-item{
     padding: 0 25% 0 25%;
   }
+  #menu.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-item{
+    margin-bottom: 5%;
+  }
 }
 @media screen and (min-width:951px)  and (max-width: 1024px){
-  .footer-sidebar{
-    top: 51rem;
-    left: 0rem;
-    width: 100%;
+  #menu.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-item{
+    margin-bottom: 5%;
   }
   .content-nav{
     margin-top: 5%;
