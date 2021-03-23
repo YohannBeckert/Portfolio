@@ -21,7 +21,6 @@ li{
 }
 .sidebar{
     width: 20%;
-    height: 100%; 
      position: sticky;
      top: 0px;
     display: flex;
@@ -82,10 +81,6 @@ a{
 
     /*  Menu Navigation */
 
-.content-nav{
-    margin-top: 35%;
-}
-
 .content-nav-item{
     padding: 0 20% 0 20%;
 }
@@ -107,10 +102,7 @@ a{
         /* Social Navigation  */
 
 .footer-sidebar{
-    position: absolute;
-    top: 57rem;
-    left: 1rem;
-    clear: both;
+
 }
 .content-nav-social{
     padding-bottom: 2%;

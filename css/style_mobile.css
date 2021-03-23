@@ -2,11 +2,7 @@
   .content-nav-item{
     padding: 0 10% 0 10%;
   }
-  .footer-sidebar{
-    top: 58rem;
-    left: 0rem;
-    width: 100%;
-}
+
   .project-container{
     max-width: 100%;
     height: 14rem;
@@ -39,11 +35,7 @@
   .content-nav-item{
     padding: 0 10% 0 10%;
   }
-  .footer-sidebar{
-    top: 58rem;
-    left: 0rem;
-    width: 100%;
-}
+
 .content-item-contact{
   width: 80%;
   padding: 8% 0;
@@ -57,23 +49,30 @@
 }
 @media screen and (max-width: 480px){
 
-                    /*                          */
+                   /*                 */
                   /*  Configuration  */
-                /*                          */
+                 /*                 */
 
 .sidebar{
   display: none;
 }
-                  /*                 */
+                 /*           */
                 /*  Sidebar  */
-              /*                 */
+               /*           */
 
 /* Title sidebar */
 
 .sidebar-title{
 margin-top: 0;
 }
-
+#menu.visible{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-item{
+  margin-bottom: 5%;
+}
 
          /* Social Navigation  */
 
@@ -84,9 +83,9 @@ margin-top: 0;
 
 
 
-                                     /*                        */
+                                     /*                */
                                     /*  Présentation  */
-                                   /*                        */
+                                   /*                */
 
 
   #presentation{
@@ -141,9 +140,9 @@ margin-top: 0;
   }
 
 
-                                     /*                  */
+                                     /*            */
                                     /*  Services  */
-                                   /*                  */
+                                   /*            */
 
 
  .content-service-items{
@@ -160,9 +159,9 @@ margin-top: 0;
  }
 
 
-                                     /*                 */
+                                     /*             */
                                     /*  Portfolio  */
-                                   /*                 */
+                                   /*             */
 
  #portfolio{
    height: auto;
@@ -171,9 +170,9 @@ margin-top: 0;
     flex-direction: column;
   }
 
-                                       /*                 */
-                                     /*  Contact   */
-                                   /*                  */
+                                       /*          */
+                                      /*  Contact */
+                                     /*          */
 
 
 .content-text-contact p{
