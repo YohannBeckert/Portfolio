@@ -125,10 +125,10 @@
                             <h1>Bienvenue sur mon Portfolio</h1>
                         </div>
                         <div class="title-text-home">
-                            <h2>Développeur web d'applications web et mobiles</h2>
+                            <h2>De développeur web et web mobiles</h2>
                         </div>
                         <div class="text-home">
-                            <h3>Je vous laisse le parcourir pour en savoir d'avantage</h3>
+                            <h3>Je vous laisse le parcourir pour en savoir d'avantage sur moi<br>et mes travaux</h3>
                         </div>
                     </div>
                     <div class="container">
@@ -157,11 +157,11 @@
                         </div>
                         <div class="text-presentation">
                             <p>
-                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile en téléprésentiel. Mes outils actuels sont HTML, CSS, Javascript, SQL, PHP et le framework Symfony. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework comme Python ou encore REACT JS. <br><br>
-                                Très appliquée, je tends à produire un code de qualité et maintenable dans le temps en utilisant la méthode agile.
+                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile en téléprésentiel. Mes langages et outils actuels sont HTML, CSS (et SCSS), Javascript, Mysql, PHP, WordPress, Symfony et React. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework comme Python ou encore Node JS. <br><br>
+                                Très appliqué, je tends à produire un code de qualité et maintenable dans le temps en utilisant la méthode agile.
                                 Je mets à votre service et au service des clients mon dynamisme, ma curiosité et ma rapide capacité d'adaptation.
-                                Même si je suis plus à l'aise avec back-end, je suis aussi capable de travailler sur le front. <br><br>
-                                Sociable, autonome, autodidacte, bonne capacité de recherche,et dynamique, je travaille en anglais et/ou français.
+                                Même si j'ai plus d'aisance avec back-end, je suis tout à fait capable de travailler sur le front. <br><br>
+                                Réel passionné du développement web, j'aime ce que je fais et cela se ressent dans mon travail. J'affectionne tout particulièrement le travail d'équipe et les relations humaines en règle général. Autonome, autodidacte avec bonne capacité de recherche, je peux travailler en anglais et/ou français.
                             </p>
                         </div>  
                         <div class="content-btn-presentation">
@@ -208,7 +208,7 @@
                         </div>                    
 
                         <div class="service-item">
-                            <div class="icon-item">
+                            <div class="icon-item SEO">
                             </div>
                             <div class="title-item-service">
                                 <h3>SEO</h3>
@@ -244,20 +244,20 @@
                     </div>
                     <div class="content-nav-filter-pf">
                         <div class="item-filter-btn">
-                            <button class="filter-btn">tous</button>  
+                            <button class="filter-btn" id="tous-btn" onclick="app.handleClickTous()">tous</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn">portfolio</button>  
+                            <button class="filter-btn" id="portfolio-btn" onclick="app.handleClickPortfolio()">portfolio</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn">projet</button>  
+                            <button class="filter-btn" id="projet-btn" onclick="app.handleClickProjet()">projets</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn">blog</button>  
+                            <button class="filter-btn" id="blog-btn" onclick="app.handleClickBlog()">blogs</button>  
                         </div>
                     </div>
                     <div class="content-all-projects">
-                        <div class="project-container">
+                        <div class="project-container portfolio-project">
                             <img class="project-picture" src="assets/images/others/portfolio.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
@@ -277,7 +277,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-container">
+                        <div class="project-container project-project">
                             <img class="project-picture" src="assets/images/others/foodlocal.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-container">
+                        <div class="project-container project-project">
                             <img class="project-picture" src="assets/images/others/algo-mate.png" alt="">
                             <div class="overlay">
                                 <div class="title-project">
@@ -442,5 +442,6 @@
 
 
    <script src="JS/index.js"></script>
+   <script src="JS/filter.js"></script>
 </body>
 </html>
