@@ -1,67 +1,83 @@
-let app = {
+const filter = {
 
     init: function(){
-        btnTous = document.querySelector('#tous-btn');
-        btnPortfolio = document.querySelector('#portfolio-btn');
-        btnProjet = document.querySelector('#projet-btn');
-        btnBlog = document.querySelector('#blog-btn');
+        const btnTous = document.querySelector('#tous-btn');
+        const btnPortfolio = document.querySelector('#portfolio-btn');  
+        const btnProjet = document.querySelector('#projet-btn');
+        const btnBlog = document.querySelector('#blog-btn');
 
-        portfolioProject = document.querySelector('.portfolio-project');
-        allProjects = document.querySelectorAll('.project-project');
+        let allBtn = [btnTous,btnPortfolio,btnProjet,btnBlog];
+        allBtn.forEach(element => {
+            element.addEventListener('click',filter.handleClick);
+        });
+        
     },
 
-    handleClickTous: function(){
-        btnPortfolio.classList.remove("filter-btn-focus");
-        btnProjet.classList.remove("filter-btn-focus");
-        btnBlog.classList.remove("filter-btn-focus");
-        btnTous.classList.add("filter-btn-focus");
-        portfolioProject.style.display = "flex";
+    handleClick: function(event){
+        filter.resetStyle();
+        this.classList.toggle("filter-btn-focus");
 
-        let index = 0;
-        for (index in allProjects){
-            allProjects[index].style.display = "flex";
+        /* Récupération de la valeur du bouton cliqué */
+        let btnToCheck = event.currentTarget;
+        let btnValue = btnToCheck.value;
+
+        /* Application du gestionnaire de filtre */
+        filter.management(btnValue);
+
+    },
+
+    resetStyle: function(){
+        const btnTous = document.querySelector('#tous-btn');
+        const btnPortfolio = document.querySelector('#portfolio-btn');
+        const btnProjet = document.querySelector('#projet-btn');
+        const btnBlog = document.querySelector('#blog-btn');
+
+        let allBtn = [btnTous,btnPortfolio,btnProjet,btnBlog];
+        allBtn.forEach(element =>{
+            element.classList.remove("filter-btn-focus");
+        })
+    },
+
+    management: function(btnValue){
+
+        let portfolioProject = document.querySelectorAll('.portfolio-project');
+        let projectProject = document.querySelectorAll('.project-project');
+        /* Blogs = document.querySelector('.blogs-project'); */
+        
+        if(btnValue === "Tous"){
+            portfolioProject.forEach(element => {
+                element.style.display = "flex";
+            });
+            projectProject.forEach(element => {
+                element.style.display = "flex";
+            });
         }
-    },
-
-    handleClickPortfolio: function(){
-        btnProjet.classList.remove("filter-btn-focus");
-        btnBlog.classList.remove("filter-btn-focus");
-        btnTous.classList.remove("filter-btn-focus");
-        btnPortfolio.classList.add("filter-btn-focus");
-        portfolioProject.style.display = "flex";
-
-        let index = 0;
-        for (index in allProjects){
-            allProjects[index].style.display = "none";
+        else if(btnValue === "Portfolio"){
+            portfolioProject.forEach(element => {
+                element.style.display = "flex";
+            });
+            projectProject.forEach(element => {
+                element.style.display = "none";
+            });
         }
-    },
-
-    handleClickProjet: function(){
-        btnTous.classList.remove("filter-btn-focus");
-        btnPortfolio.classList.remove("filter-btn-focus");
-        btnBlog.classList.remove("filter-btn-focus");
-        btnProjet.classList.add("filter-btn-focus");
-        portfolioProject.style.display = "none";
-
-        let index = 0;
-        for (index in allProjects){
-            allProjects[index].style.display = "flex";
-        }    
-    },
-
-    handleClickBlog: function(){
-        btnTous.classList.remove("filter-btn-focus");
-        btnPortfolio.classList.remove("filter-btn-focus");
-        btnProjet.classList.remove("filter-btn-focus");
-        btnBlog.classList.add("filter-btn-focus");
-        portfolioProject.style.display = "none";
-
-        let index = 0;
-        for (index in allProjects){
-            allProjects[index].style.display = "none";
+        else if(btnValue === "Projets"){
+            portfolioProject.forEach(element => {
+                element.style.display = "none";
+            });
+            projectProject.forEach(element => {
+                element.style.display = "flex";
+            });
+        }
+        else if(btnValue === "Blogs"){
+            portfolioProject.forEach(element => {
+                element.style.display = "none";
+            });
+            projectProject.forEach(element => {
+                element.style.display = "none";
+            });
         }
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", app.init);
+document.addEventListener("DOMContentLoaded", filter.init);

@@ -40,27 +40,27 @@
                     <ul class="content-nav-item">
                         <a href="#accueil">
                             <div class="content-item">
-                                <li class="nav-item"><p>accueil</p></li>
+                                <li id="-accueil" class="nav-item"><p>accueil</p></li>
                             </div>
                         </a>
                         <a href="#présentation">
                             <div class="content-item">
-                                <li class="nav-item"><p>présentation</p></li>
+                                <li id="-presentation" class="nav-item"><p>présentation</p></li>
                             </div>
                         </a>    
                         <a href="#services">
                             <div class="content-item">
-                                <li class="nav-item"><p>services</p></li>
+                                <li id="-services" class="nav-item"><p>services</p></li>
                             </div>
                         </a>          
                         <a href="#portfolio">
                             <div class="content-item">
-                                <li class="nav-item"><p>portfolio</p></li>
+                                <li id="-portfolio" class="nav-item"><p>portfolio</p></li>
                             </div>
                         </a>               
                         <a href="#contact">
                             <div class="content-item">
-                                <li class="nav-item"><p>Contact</p></li>
+                                <li id="-contact" class="nav-item"><p>Contact</p></li>
                             </div>
                         </a>    
                     </ul>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="text-presentation">
                             <p>
-                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile en téléprésentiel. Mes langages et outils actuels sont HTML, CSS (et SCSS), Javascript, Mysql, PHP, WordPress, Symfony et React. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework comme Python ou encore Node JS. <br><br>
+                                J'ai récemment été formé à l'école O'Clock au developpement web et web mobile en téléprésentiel où j'en suis ressorti avec mon diplôme de niveau 5 inscrit au RNCP. Mes langages et outils actuels sont HTML, CSS (et SCSS), PHP, MySQL, Javascript, Symfony, React et WordPress. Je suis dans la capacité de progresser de manière autonome sur d'autres langages et framework si nécessaire. <br><br>
                                 Très appliqué, je tends à produire un code de qualité et maintenable dans le temps en utilisant la méthode agile.
                                 Je mets à votre service et au service des clients mon dynamisme, ma curiosité et ma rapide capacité d'adaptation.
                                 Même si j'ai plus d'aisance avec back-end, je suis tout à fait capable de travailler sur le front. <br><br>
@@ -244,16 +244,16 @@
                     </div>
                     <div class="content-nav-filter-pf">
                         <div class="item-filter-btn">
-                            <button class="filter-btn" id="tous-btn" onclick="app.handleClickTous()">tous</button>  
+                            <button class="filter-btn" id="tous-btn" value="Tous">tous</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn" id="portfolio-btn" onclick="app.handleClickPortfolio()">portfolio</button>  
+                            <button class="filter-btn" id="portfolio-btn" value="Portfolio">portfolio</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn" id="projet-btn" onclick="app.handleClickProjet()">projets</button>  
+                            <button class="filter-btn" id="projet-btn" value="Projets">projets</button>  
                         </div>
                         <div class="item-filter-btn">
-                            <button class="filter-btn" id="blog-btn" onclick="app.handleClickBlog()">blogs</button>  
+                            <button class="filter-btn" id="blog-btn" value="Blogs">blogs</button>  
                         </div>
                     </div>
                     <div class="content-all-projects">
@@ -441,7 +441,7 @@
    </section>
 
 
-   <script src="JS/index.js"></script>
+   <script src="JS/menu.js"></script>
    <script src="JS/filter.js"></script>
 </body>
 </html>
